@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --panamax-red: #ff0000;
+    --panamax-dark-red: #d40000;
+    --font-one: "Segoe UI", sans-serif;
+    --font-two: "Poppins", sans-serif;
+    --font-three: "Inter", sans-serif;
+}
+
+body {
+    background-color: #fff1f1;
+    font-family: var(--font-two);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Segoe UI',sans-serif;
+  font-style: italic;
+}
+
+
+h1{
+    font-size: 1.5rem; 
+  font-weight: 700;
+}
+
+
+
+
+.higlight{
+color: var(--panamax-dark-red);
+}
+
+
+
+.active{
+    color: var(--panamax-dark-red) !important;
+    font-weight: 600;
+   
+}
+
+.navbar{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav{
+    gap: 10px;
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+
+
+.search-box {
+    background-color: #f8f0f0;
+    border-radius: .375rem;
+    padding: 2px 5px 2px 15px;
+}
+.search-box:has(input:focus) {
+    border: 1px solid var(--panamax-red);
+}
+
+
+.search-box input {
+    border: none;
+    background: transparent;
+    
+    outline: none;
+}
+
+
+.search-box button {
+    background: white;
+    border: none;
+   color: var(--panamax-red);
+    border-radius: .375rem;
+    height: 40px;
+    width: 40px;
+}
+
+.nav-link {
+    color: #000000    ; 
+    text-decoration: inherit;
+    text-transform: capitalize
+}
+
+.nav-link:hover {
+    color: var(--panamax-red);
+}
+
+
+/* hero-section */
+.hero-section{
+    padding-bottom: 20px;
+    
+}
+.line-padding{
+    padding: 20px 0 0 0;
+    background: white;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+.hero-section img{
+border-radius: 20px;
+border: 2 solid #e5e7eb;
+width: 100%;
+}
+
+.enquiry-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(50, 50, 105, 0.15), 0 1px 1px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.enquiry-form .heading p {
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    width: 100%;
+    border: 1.5px solid #f2f2f2;
+    border-radius: .5rem;
+    background: none;
+    padding: .7rem;
+    font-size: .7rem;
+    
+    transition: all 0.3s ease;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #222;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    background-color: #fff;
+    font-size: .8rem;}
+
+/* Placeholder sirf tab move karega jab input pe focus hoga */
+.input-group input:focus {
+    border-color: red;
+    box-shadow: none;
+}
+
+.input-group input:focus + label {
+    top: 0;
+    left: 10px;
+    font-size: 0.8rem;
+    z-index: 99;
+    color: red;
+}
+ 
+.enquiry-btn {
+    border-radius: .375rem;
+
+    border-color: rgb(228 29 32);
+    background-color: rgb(228 29 32);
+    padding: .5rem 1rem;
+    color: rgb(255 255 255);
+    transition-property: all 1s;
+   
+}
+
+
+.enquiry-btn:hover{
+border-radius: 20px;
+}
+
+/* about */
+
+
+.section {
+    padding: 35px 0;
+  position: relative;
+
+}
+
+.company-name {
+    color: var(--panamax-red);
+    font-weight: bold;
+    display: inline;
+}
+
+
+.company-description {
+    margin-top: 20px;
+    color: #333;
+    font-size: 1rem;
+}
+
+.read-more-btn {
+    background-color: var(--panamax-red);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+    background-color: var(--panamax-dark-red);
+    color: white;
+}
+
+.red-section {
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.manufacturer-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.adhesive-tapes {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.section::after{
+    content: "";
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    top: 0;
+    width: 16.666667%;
+    height: 100%;
+
+    background-color: #d40000;
+    }
+
+.product-image  {
+    border-radius: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.about-us{
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .company-tagline {
+        font-size: 1.5rem;
+    }
+    
+    .adhesive-tapes {
+        font-size: 2rem;
+    }
+    
+    .red-section {
+        margin-top: 30px;
+    }
+}
