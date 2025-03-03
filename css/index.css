@@ -54,6 +54,28 @@ color: var(--panamax-dark-red);
 
 
 
+
+
+
+
+.dropdown-menu .dropdown-item {
+    font-family: var(--font-secondary);
+    font-size: 14px;
+    padding: 8px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--panamax-dark-red);
+    color: white;
+    padding-left: 20px;
+}
+
+
+
+
+
 .search-box {
     background-color: #f8f0f0;
     border-radius: .375rem;
